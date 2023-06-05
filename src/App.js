@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        Tugas 1. Intro ReactJs
         <a
           className="App-link"
           href="https://reactjs.org"
