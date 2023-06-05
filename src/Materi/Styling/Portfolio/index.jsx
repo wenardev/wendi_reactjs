@@ -12,7 +12,7 @@ export default class Portfolio extends React.Component {
     const education = [
       {
         institution: "Sekolah Tinggi Teknik Wastukancana",
-        degree: "Strata 1 Teknik Informatika",
+        degree: "Teknik Informatika",
         year: "2017 - 2021"
       },
       {
