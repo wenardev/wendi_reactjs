@@ -19,6 +19,7 @@ export default class Reusable extends React.Component {
 	render() {
 		return (
 			<div>
+				<h1>Wendi Abdul Rohim</h1>
 				<Bar value={this.state.value}/>
 				<Product receiveValue={this.handleValue} />
 			</div>
