@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mr {
+  margin-right: 10px;
 }
 
 .App-logo {
@@ -34,5 +41,70 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* CSS untuk tampilan desktop */
+header {
+  background-color: palegreen;
+  padding: 20px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* CSS untuk tampilan mobile */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 10px;
   }
 }
