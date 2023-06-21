@@ -1,3 +1,4 @@
+import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 //import Komponen from "./Materi/Komponen";
@@ -5,42 +6,62 @@ import './App.css';
 //import Reusable from "./Materi/Reusable";
 //import Rendering from "./Materi/Rendering";
 //import Form from "./Materi/Form";
+//import Lifecycle from "./Materi/Lifecycle";
 //import News from "./Materi/News";
+//import Hooks from "./Materi/Hooks";
 //import Routing from "./Materi/Routing";
-import { Link, Outlet } from 'react-router-dom';
+//import { Link, Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    
     <div className="App">
-      <h1>Belajar React Routing</h1>
+      <header>
+        <h1>Welcome to Petshop</h1>
+      </header>
       <nav>
-        <Link to="/home" className="mr">
-          Home
-        </Link>
-        <Link to="/category/kucing" className="mr">
-          Kucing
-        </Link>
-        <Link to="/category/anjing" className="mr">
-          Anjing
-        </Link>
-        <Link to="/category/burung" className="mr">
-          Burung
-        </Link>
-        <Link to="/category/hamster" className="mr">
-          Hamster
-        </Link>
-        <Link to="/about" className="mr">
-          About
-        </Link>
-        <Link to="/contact" className="mr">
-          Contact
-        </Link> 
+        <ul>
+          <li>
+            <Link to="/home" className="mr">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/category/kucing" className="mr">
+              Kucing
+            </Link>
+          </li>
+          <li>
+            <Link to="/category/anjing" className="mr">
+              Anjing
+            </Link>
+          </li>
+          <li>
+            <Link to="/category/burung" className="mr">
+              Burung
+            </Link>
+          </li>
+          <li>
+            <Link to="/category/hamster" className="mr">
+              Hamster
+            </Link>
+          </li>
+          <li>
+            <a href="/about" className="mr">About</a>
+          </li>
+          <li>
+            <Link to="/contact" className="mr">
+              Contact
+            </Link>
+          </li>
+        </ul>
       </nav>
-
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
+      <footer>
+        <p>&copy; {new Date().getFullYear()} Petshop. All rights reserved.</p>
+      </footer>
     </div>
-
   );
 }
 
